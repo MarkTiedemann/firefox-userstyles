@@ -1,0 +1,27 @@
+@-moz-document url(chrome://browser/content/browser.xhtml) {
+
+	:root:-moz-lwtheme-brighttext {
+		--focus-outline-color: #ffffff !important;
+	}
+
+	#star-button-box {
+		display: none !important;
+	}
+
+	#context-navigation,
+	#contentAreaContextMenu menuseparator,
+	#context-savepage,
+	#context-selectall,
+	#context-sendpagetodevice,
+	#context-pocket,
+	#context-take-screenshot,
+	#context-inspect-a11y,
+	#context-bookmarklink,
+	#context-savelink,
+	#context-openlinkprivate,
+	#context-sendlinktodevice,
+	#context-savelinktopocket {
+		display: none !important;
+	}
+
+}
