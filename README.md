@@ -1,4 +1,4 @@
-# ff-chrome
+# firefox-userstyles
 
 *My user styles for Firefox.*
 
