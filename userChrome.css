@@ -1,13 +1,18 @@
 @-moz-document url(chrome://browser/content/browser.xhtml) {
 
 	:root:-moz-lwtheme-brighttext {
-		--focus-outline-color: #ffffff !important;
+		--focus-outline-color: white !important;
 	}
 
 	#star-button-box {
 		display: none !important;
 	}
 
+	.search-one-offs {
+		display: none !important;
+	}
+
+	/* page */
 	#context-navigation,
 	#contentAreaContextMenu menuseparator,
 	#context-savepage,
@@ -16,11 +21,17 @@
 	#context-pocket,
 	#context-take-screenshot,
 	#context-inspect-a11y,
+	/* link */
 	#context-bookmarklink,
 	#context-savelink,
 	#context-openlinkprivate,
+	#context-searchselect,
 	#context-sendlinktodevice,
-	#context-savelinktopocket {
+	#context-savelinktopocket,
+	/* image */
+	#context-sendimage,
+	#context-setDesktopBackground,
+	#context-viewimageinfo {
 		display: none !important;
 	}
 
