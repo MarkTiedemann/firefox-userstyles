@@ -1,10 +1,11 @@
 # ff-chrome
 
-*My `userChrome.css` styles for Firefox.*
+*My user styles for Firefox.*
 
 **Initial Setup:**
 
-1. Open the profile directory in `about:support`.
-2. In the profile directory, create a `chrome\userChrome.css` file.
-3. Enable `toolkit.legacyUserProfileCustomizations.stylesheets` in `about:config`.
-4. Restart Firefox.
+1. Go to `about:support` and open your profile directory.
+2. Within your profile directory, create a `chrome` directory.
+3. Within the `chrome` directory, create both `userChrome.css` and `userContent.css`. 
+4. Enable `toolkit.legacyUserProfileCustomizations.stylesheets` in `about:config`.
+5. Restart Firefox.
