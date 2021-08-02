@@ -28,13 +28,17 @@
 	.content-139,
 	.content-140,
 	.content-141,
-	.content-142 {
+	.content-142,
+	.content-143,
+	.content-144 {
 		background-color: #171717 !important;
 	}
 	.root-139 :first-child,
 	.root-140 :first-child,
 	.root-141 :first-child,
-	.root-142 :first-child {
+	.root-142 :first-child,
+	.root-143 :first-child,
+	.root-144 :first-child {
 		background-color: transparent !important;
 		border-color: white !important;
 	}
