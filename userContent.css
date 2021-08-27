@@ -1,3 +1,61 @@
+@-moz-document domain(youtube.com) {
+
+	/* Home */
+	ytd-guide-section-renderer:nth-of-type(1) #items > ytd-guide-entry-renderer:nth-of-type(1),
+	/* Explore */
+	ytd-guide-section-renderer:nth-of-type(1) #items > ytd-guide-entry-renderer:nth-of-type(2),
+
+	/* History */
+	ytd-guide-collapsible-section-entry-renderer #section-items > ytd-guide-entry-renderer:nth-of-type(1),
+	/* Your Videos */
+	ytd-guide-collapsible-section-entry-renderer #section-items > ytd-guide-entry-renderer:nth-of-type(2),
+	/* Your Movies */
+	ytd-guide-collapsible-section-entry-renderer #section-items > ytd-guide-entry-renderer:nth-of-type(3),
+
+	ytd-guide-collapsible-entry-renderer #expandable-items > ytd-guide-entry-renderer:not(
+		/* Keep two most-recently edited playlists (e.g. Liked Videos) as well as the last playlist */
+		:nth-of-type(1),
+		:nth-of-type(2),
+		:last-of-type
+	),
+
+	/* Subscriptions */
+	ytd-guide-section-renderer:nth-of-type(2),
+
+	/* More from YouTube */
+	ytd-guide-section-renderer:nth-of-type(3),
+
+	/* Report history */
+	ytd-guide-section-renderer:nth-of-type(4) ytd-guide-entry-renderer:nth-of-type(2),
+	/* Help */
+	ytd-guide-section-renderer:nth-of-type(4) ytd-guide-entry-renderer:nth-of-type(3),
+	/* Send feedback */
+	ytd-guide-section-renderer:nth-of-type(4) ytd-guide-entry-renderer:nth-of-type(4),
+
+	ytd-guide-section-renderer h3,
+	#collapser-item,
+	#footer,
+	#voice-search-button,
+
+	/* Create */
+	ytd-topbar-menu-button-renderer:nth-of-type(1),
+	/* YouTube apps */
+	ytd-topbar-menu-button-renderer:nth-of-type(2) {
+		display: none !important;
+	}
+
+	ytd-guide-section-renderer {
+		border-bottom: none !important;
+		padding: 0 !important;
+	}
+
+	ytd-guide-collapsible-section-entry-renderer {
+		border-top: none !important;
+		margin-top: 0 !important;
+		padding-top: 0 !important;
+	}
+}
+
 @-moz-document domain(outlook.office.com) {
 
 	* {
