@@ -1,3 +1,16 @@
+@-moz-document url-prefix(about:reader) {
+	
+	.narrate-toggle,
+	.pocket-button {
+		display: none !important;
+	}
+
+	.toolbar {
+		border: none !important;
+		box-shadow: none !important;
+	}
+}
+
 @-moz-document domain(youtube.com) {
 
 	/* Home */
@@ -40,7 +53,9 @@
 	/* Create */
 	ytd-topbar-menu-button-renderer:nth-of-type(1),
 	/* YouTube apps */
-	ytd-topbar-menu-button-renderer:nth-of-type(2) {
+	ytd-topbar-menu-button-renderer:nth-of-type(2),
+	
+	ytd-profile-column-renderer {
 		display: none !important;
 	}
 
