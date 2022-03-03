@@ -11,6 +11,66 @@
 	}
 }
 
+@-moz-document domain(developer.mozilla.org) {
+
+	/* More space for content */
+	:root {
+		--max-width: 99999px !important;
+	}
+	@media screen and (min-width: 1200px) {
+		.article-wrapper {
+			grid-template-columns: auto 1fr auto !important;
+			gap: 4em !important;
+			padding: 0 2em !important;
+		}
+	}
+
+	/* Re-order header */
+	@media screen and (min-width: 769px) {
+		.header-search {
+			order: 1 !important;
+			margin: 0 1rem !important;
+		}
+		.main-nav {
+			order: 2 !important;
+		}
+		.theme-toggle {
+			order: 3 !important;
+		}
+	}
+
+	/* Improve search bar */
+	#nav-main-search {
+		display: flex !important;
+		width: 35ch !important;
+	}
+	.toggle-search-button,
+	.close-search-button {
+		display: none !important;
+	}
+	#main-q {
+		text-decoration-color: transparent !important;
+		caret-color: var(--text-link) !important;
+	}
+	#main-q::placeholder {
+		text-decoration: none !important;
+		animation: none !important;
+	}
+	@media screen and (min-width: 769px) {
+		.button.search-button {
+			right: 1.25rem !important;
+		}
+	}
+	.search-button .icon {
+		background-color: var(--text-link) !important;
+	}
+
+	/* Improve theme toggle */
+	.theme-toggle .icon {
+		margin-right: .5em !important;
+	}
+}
+
 @-moz-document domain(youtube.com) {
 
 	/* Home */
