@@ -20,9 +20,12 @@
 	@media screen and (min-width: 1200px) {
 		.article-wrapper {
 			grid-template-columns: auto 1fr auto !important;
-			gap: 4em !important;
-			padding: 0 2em !important;
+			gap: 4rem !important;
+			padding: 0 2rem !important;
 		}
+	}
+	#sidebar-quicklinks {
+		padding-right: 2rem !important;
 	}
 
 	/* Re-order header */
@@ -67,7 +70,7 @@
 
 	/* Improve theme toggle */
 	.theme-toggle .icon {
-		margin-right: .5em !important;
+		margin-right: .5rem !important;
 	}
 }
 
