@@ -1,10 +1,13 @@
 // ==UserScript==
 // @name youtube.com
 // @match https://www.youtube.com/*
+// @description
+// @version 0
 // ==/UserScript==
 
-(function () {
-	// Expand YouTube playlists
+expandPlaylists();
+
+function expandPlaylists() {
 	let sidebar = document.getElementById("guide");
 	let observer = new MutationObserver((mutations) => {
 		for (let mutation of mutations) {
@@ -18,4 +21,4 @@
 		}
 	});
 	observer.observe(sidebar, { childList: true, subtree: true });
-})();
+}

@@ -12,66 +12,7 @@
 }
 
 @-moz-document domain(developer.mozilla.org) {
-
-	/* More space for content */
-	:root {
-		--max-width: 99999px !important;
-	}
-	@media screen and (min-width: 1200px) {
-		.article-wrapper {
-			grid-template-columns: auto 1fr auto !important;
-			gap: 4rem !important;
-			padding: 0 2rem !important;
-		}
-	}
-	#sidebar-quicklinks {
-		padding-right: 2rem !important;
-	}
-
-	/* Re-order header */
-	@media screen and (min-width: 769px) {
-		.header-search {
-			order: 1 !important;
-			margin: 0 1rem !important;
-		}
-		.main-nav {
-			order: 2 !important;
-		}
-		.theme-toggle {
-			order: 3 !important;
-		}
-	}
-
-	/* Improve search bar */
-	#nav-main-search {
-		display: flex !important;
-		width: 35ch !important;
-	}
-	.toggle-search-button,
-	.close-search-button {
-		display: none !important;
-	}
-	#main-q {
-		text-decoration-color: transparent !important;
-		caret-color: var(--text-link) !important;
-	}
-	#main-q::placeholder {
-		text-decoration: none !important;
-		animation: none !important;
-	}
-	@media screen and (min-width: 769px) {
-		.button.search-button {
-			right: 1.25rem !important;
-		}
-	}
-	.search-button .icon {
-		background-color: var(--text-link) !important;
-	}
-
-	/* Improve theme toggle */
-	.theme-toggle .icon {
-		margin-right: .5rem !important;
-	}
+	/* TODO(Mark): Re-do */
 }
 
 @-moz-document domain(youtube.com) {
@@ -101,20 +42,26 @@
 	/* Subscriptions */
 	ytd-guide-section-renderer:nth-of-type(2),
 
-	/* More from YouTube */
+	/* Movies & Shows, Gaming, Live, Learning, Sports */
 	ytd-guide-section-renderer:nth-of-type(3),
 
+	/* Youtube Premium, Creator Studio, YouTube Music, YouTube Kids, Youtube TV */
+	ytd-guide-section-renderer:nth-of-type(4),
+
 	/* Report history */
-	ytd-guide-section-renderer:nth-of-type(4) ytd-guide-entry-renderer:nth-of-type(2),
+	ytd-guide-section-renderer:nth-of-type(5) ytd-guide-entry-renderer:nth-of-type(2),
 	/* Help */
-	ytd-guide-section-renderer:nth-of-type(4) ytd-guide-entry-renderer:nth-of-type(3),
+	ytd-guide-section-renderer:nth-of-type(5) ytd-guide-entry-renderer:nth-of-type(3),
 	/* Send feedback */
-	ytd-guide-section-renderer:nth-of-type(4) ytd-guide-entry-renderer:nth-of-type(4),
+	ytd-guide-section-renderer:nth-of-type(5) ytd-guide-entry-renderer:nth-of-type(4),
 
 	ytd-guide-section-renderer h3,
 	#collapser-item,
 	#footer,
 	#voice-search-button,
+
+	ytd-mini-guide-entry-renderer[aria-label=Shorts],
+	ytd-mini-guide-entry-renderer[aria-label=Explore],
 
 	/* Create */
 	ytd-topbar-menu-button-renderer:nth-of-type(1),
